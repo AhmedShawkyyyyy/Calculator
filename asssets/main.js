@@ -1,13 +1,13 @@
 // Define Variables
-const display = document.querySelector(".display");
-const buttons = document.querySelectorAll("button");
-const operators = ["%", "*", "/", "-", "+", "="];
+let display = document.querySelector(".display");
+let buttons = document.querySelectorAll("button");
+let operators = ["%", "*", "/", "-", "+", "="];
 let output = "";
 console.log(buttons);
 console.log(display);
 
 // Definr Function to calculate based on button click
-const calculate = (btnValue) => {
+let calculate = (btnValue) => {
   console.log(btnValue);
   if (btnValue === "=" && btnValue !== "") {
     // if output has"%" , repleace with "/100" . before evalutaion
